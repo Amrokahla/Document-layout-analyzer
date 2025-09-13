@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "document-layout-analyzer"
+version = "0.1.0"
+description = "An AI system for document OCR, classification, and structured output."
+authors = ["Amr"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+fastapi = "^0.110.0"
+uvicorn = "^0.29.0"
+pydantic = "^2.6.0"
+pytesseract = "^0.3.10"
+pillow = "^10.0.0"
+scikit-learn = "^1.4.0"
+python-multipart = "^0.0.9"
+pandas = "^2.3.2"
+matplotlib = "^3.10.6"
+tqdm = "^4.67.1"
+seaborn = "^0.13.2"
+dotenv = "^0.9.9"
+pytest = "^8.4.2"
+pydantic-settings = "^2.10.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.0.0"
+isort = "^5.13.0"
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
