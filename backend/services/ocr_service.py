@@ -3,6 +3,8 @@ from PIL import Image
 import pytesseract
 import io
 
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 logger = logging.getLogger(__name__)
 
 def perform_ocr(file_bytes: bytes) -> str:
